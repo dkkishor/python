@@ -1,4 +1,4 @@
-# Lists
+# List
 * data structures that group sequences of elements
 * can have elements of several types
 * can also mix different types within the same list
