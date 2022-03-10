@@ -15,4 +15,7 @@ class Node:
     return self._next
 
   def set_next_node(self, node):
-     self._next = node
+    self._next = node
+
+  def get_data(self):
+    return self._data
