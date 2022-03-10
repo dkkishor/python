@@ -35,12 +35,15 @@ class LinkedList:
       return
     
     node = self.get_head()
+    tempStr = ""
     for i in range(self.get_length()):
-      if i > 0 and i < self.get_length() - 1:
-        print("->")
+      if i > 0 and i < self.get_length():
+        tempStr += " -> "
       
-      print (node.get_data())
+      tempStr += str(node.get_data())
       node = node.get_next_node()
+
+    print(tempStr)
       
   def insert_node(self, data, pos):
     newNode = Node(data)
@@ -52,7 +55,7 @@ class LinkedList:
       return
     
     if pos > self.get_length():
-      pos = self.get_length()
+      pos = self.get_length() + 1
     
     current_node = self.get_head()
     for i in range(pos-2):
@@ -60,4 +63,4 @@ class LinkedList:
 
     newNode.set_next_node(current_node.get_next_node())
     current_node.set_next_node(newNode)
-    self.incr_length()     
+    self.incr_length()
