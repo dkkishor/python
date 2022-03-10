@@ -6,7 +6,7 @@
             * python
 """
 
-import Node from Node
+from Node import Node
 
 class LinkedList:
   def __init__(self):
@@ -29,6 +29,19 @@ class LinkedList:
   def incr_length(self):
     self._len += 1
     
+  def print_list(self):
+    if self.is_empty():
+      print("List is empty")
+      return
+    
+    node = self.get_head()
+    for i in range(self.get_length()):
+      if i > 0 and i < self.get_length() - 1:
+        print("->")
+      
+      print (node.get_data())
+      node = node.get_next_node()
+      
   def insert_node(self, data, pos):
     newNode = Node(data)
 
