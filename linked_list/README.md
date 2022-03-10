@@ -4,7 +4,7 @@
 
 ## Singly Linked List
 
-HEAD [Data | Pointer] --> NODE1 [Data | Pointer] --> NODE2 [Data | Pointer] --> ...
+HEAD [Data | Pointer] --> NODE1 [Data | Pointer] --> NODE2 [Data | Pointer] --> ... --> TAIL [DATA | None]
 
 * There is no backward pointer which makes it a Singly Linked List.
 * Time Complexity at the head is O(1)
