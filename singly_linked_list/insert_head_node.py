@@ -11,9 +11,11 @@ from LinkedList import LinkedList
 if __name__ == "__main__":
   ll = LinkedList()
 
-  // First Parameter is Data.
-  // Second Parameter is Node position
-  // Node position is always 1 indicating Head Node.
+  '''
+  First Parameter is Data.
+  Second Parameter is Node position
+  Node position is always 1 indicating Head Node.
+  '''
   
   ll.insert_node(0, 1)
   ll.print_list()
